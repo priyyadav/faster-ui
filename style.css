@@ -1,2 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*,*::before, *::after{
+    box-sizing: border-box;
+    outline: none;
+    --webkit-font-smoothing:auto !important;
+}
+:root{
+    --white: #ffffff;
+    --primary-cta: #4E47FF;
+    --blue-shade:#5B54FF;
+    --secondary-blue:  #252432;
+    --neutral-grey: #8987A1;
+    --light-blue:#F5F8FF;
+    --yellow:#F7C33D;
+    --fs14:0.875rem;
+    --fs16:1rem; 
+    --fs18:1.125rem;
+    --fs19:1.236rem;
+    --fs20:1.25rem;
+    --fs30:1.875rem;
+    --fs34:2.125rem;
+    --fs60:3.75rem;
+    --fs73:4.584rem;
+    --font-weight400: 400;
+    --font-weight500: 500;
+    --font-weight600: 600;
+    --font-weight700: 700;
+    --line-height21:21px;
+    --line-height24:24px;
+    --line-height30:30px;
+    --line-height36:36px;
+    --line-height73:73px;
+    --line-height72:72px;
+}
+body
+{
+    height: 100%;
+    font-family: "Inter";
+    font-size: 16px;
+}
+
+body,h1,h2,h3,p,ul,li,a{
+    margin: 0;
+    padding: 0;
+    color: var(--neutral-grey);
+}
+a
+{
+    text-decoration: none;
+}
+.cx-h1
+{
+    color: var(--secondary-blue);
+    font-family: "Raleway";
+    font-size: var(--fs73);
+    font-weight: var(--font-weight700);
+    line-height: var(--line-height73) ;
+}
+.cx-h2
+{
+    color: var(--secondary-blue);
+    font-family: "Raleway";
+    font-size: var(--fs60);
+    font-weight: var(--font-weight700);
+    line-height: var(--line-height72) ;
+}
+.cx-h3
+{
+    color: var(--secondary-blue);
+    font-family: "Raleway";
+    font-size: var(--fs30);
+    font-weight: var(--font-weight700);
+    line-height: var(--line-height36) ;
+}
+.cx-h4
+{
+    color: var(--secondary-blue);
+    font-family: "Raleway";
+    font-size: var(--fs18);
+    font-weight: var(--font-weight700);
+    line-height: var(--line-height21) ;
+}
+.cx-text14
+{
+    color: var(--neutral-grey);
+    font-family: "Inter";
+    font-size: var(--fs14);
+    font-weight: var(--font-weight400);
+    line-height: var(--line-height21) ;
+}
+.cx-text16
+{
+    color: var(--neutral-grey);
+    font-family: "Inter";
+    font-size: var(--fs16);
+    font-weight: var(--font-weight400);
+    line-height: var(--line-height24) ;
+}
+
+.cx-text19
+{
+    color: var(--neutral-grey);
+    font-family: "Inter";
+    font-size: var(--fs19);
+    font-weight: var(--font-weight600);
+    line-height: var(--line-height24) ;
+}
+.cx-text20
+{
+    color: var(--neutral-grey);
+    font-family: "Inter";
+    font-size: var(--fs20);
+    font-weight: var(--font-weight400);
+    line-height: var(--line-height30) ;
+}
+.cta-primary-text16
+{
+    color: var(--white);
+    font-family: "Raleway";
+    font-size: var(--fs16);
+    font-weight: var(--font-weight700);
+    line-height: var(--line-height24) ;
+}
+
+
+
+
