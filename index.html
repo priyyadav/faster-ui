@@ -13,33 +13,33 @@
 	<script src="script.js" async></script>
 </head>
 <body>
-	<header>
-		<div class="logo-wrapper">
-			<img src="/images/logo.svg" alt="FASTER UI" />
-		</div>
-		<nav class="navigation-wrapper">
-			<ul class="nav-items">
-				<li class="nav-item">Home</li>
-				<li class="nav-item">About</li>
-				<li class="nav-item">How it Works</li>
-				<li class="nav-item">Services</li>
-			</ul>
-		</nav>
-		<div class="user-wrapper">
-			<button>Sign In</button>
-			<button>Sign Up</button>
-		</div>
-	</header>
 	<main>
-		<section>
-			<div class="body-wrapper">
-				<h1>
+		<section class="hero-wrapper" id="home-section">
+			<header class="flex-div justify-space align-center">
+				<div class="logo-wrapper">
+					<img src="/images/logo.svg" alt="FASTER UI" />
+				</div>
+				<nav class="navigation-wrapper">
+					<ul class="nav-items flex-div">
+						<li class="nav-item cx-text16"><a href="#home-section">Home</a></li>
+						<li class="nav-item cx-text16"><a href="#about-section">About</a></li>
+						<li class="nav-item cx-text16"><a href="#how-it-works-section">How it Works</a></li>
+						<li class="nav-item cx-text16"><a href="#services-section">Services</a></li>
+					</ul>
+				</nav>
+				<div class="user-wrapper">
+					<button class="cx-text16">Sign In</button>
+					<button class="cta-primary cta-primary-text16">Sign Up</button>
+				</div>
+			</header>
+			<div class="hero-body-wrapper">
+				<h1 class="cx-h1">
 					Awesome UI Dark Template for Webflow Agency
 				</h1>
-				<button>Get in Touch</button>
+				<button class="cta-secondary cta-primary-text16">Get in Touch</button>
 			</div>
 		</section>
-		<section class="works">
+		<section class="works" id="about-section">
 			<div class="work-wrapper">
 				<h2 class="cx-h2">What We do</h2>
 				<div class="flex-column-div flex-div">
@@ -92,7 +92,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="proof-of-work-wrapper">
+		<section class="proof-of-work-wrapper" id="how-it-works-section">
 			<div class="header-wrapper flex-div ">
 				<button class="prev arrow-button"><img src="/images/right-arrow.png" class="arrow"/></button>
 				<div class="proof-of-work-title">
@@ -127,7 +127,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="pricing flex-div justify-space">
+		<section class="pricing flex-div justify-space" id="services-section">
 			<div class="connects-wrapper">
 				<h2 class="cx-h2">Pricing</h2>
 				<p class="cx-text14">Take a look at some of our recent projects to see how we've helped businesses like yours succeed
