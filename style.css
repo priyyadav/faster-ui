@@ -60,7 +60,7 @@
     --spacing72: 72px;
     --spacing82: 82px;
     --spacing84: 84px;
-    --spacing124: 124px;
+    --spacing124: 112px;
     --spacing156: 156px;
     --border-radius10: 10px;
     --border-radius20: 20px;
@@ -162,7 +162,7 @@ ul, li{
 
 .cx-text19
 {
-    color: var(--neutral-grey);
+    color: var(--secondary-blue);
     font-family: "Inter";
     font-size: var(--fs19);
     font-weight: var(--font-weight600);
@@ -205,7 +205,66 @@ ul, li{
     padding: var(--spacing24) var(--spacing30);
     background: var(--white);
 }
+.work-wrapper
+{
+    padding: var(--spacing124);
+}
+.work-wrapper .cx-h2
+{
+    margin-bottom: var(--spacing32);
+}
 
+
+.work-wrapper .left-section
+{
+   gap: var(--spacing32);
+   flex-wrap: wrap;
+}
+.work-wrapper .left-section .card-wrapper
+{
+  width: 30%;
+}
+.work-wrapper .left-section .image-container
+{
+  background: var(--blue-shade);
+  border-radius: 5px;
+  
+}
+.work-wrapper .card-wrapper .cx-text19
+{
+  margin: var(--spacing20) 0;
+}
+.work-wrapper .left-section .card-wrapper.flex-div
+{
+  width: 63%;
+  justify-content: space-between;
+}
+.work-wrapper .left-section .card-wrapper.flex-div .webflow-container
+{
+  width: 43%;
+
+
+}
+.work-wrapper .left-section .card-wrapper.flex-div .image-container
+{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.work-wrapper .right-section.card-wrapper .cx-text14
+{
+   margin-bottom: var(--spacing42);
+}
+.work-wrapper .card-image
+{
+   background: var(--light-blue);
+   padding: var(--spacing10);
+   border-radius: var(--border-radius10);
+
+
+}
 .proof-of-work-wrapper
 {
     background: url("/images/work-background.png");
@@ -218,6 +277,7 @@ ul, li{
 {
     width: 70%;
     margin: auto;
+    align-items: center;
 }
 .proof-of-work-wrapper .proof-of-work-title 
 {
@@ -411,6 +471,14 @@ textarea
 .form-controls
 {
     margin-bottom: var(--spacing16);
+}
+footer{
+    background: 
+    linear-gradient(to top right, red 0%, transparent 50%), /* Bottom left gradient */
+    linear-gradient(to top left, blue 0%, transparent 50%); /* Bottom right gradient */
+  background-size: 70% 70%;
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat;
 }
 .footer-wrapper
 {
