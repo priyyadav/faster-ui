@@ -8,26 +8,36 @@
 	<link rel="stylesheet" href="style.css" />
 	<meta name="description" content="Awesome UI Dark Template for Webflow Agency" />
 	<meta name="keywords" content="Webflow,UI/UX, Web Design, FASTER UI">
-	<link href="assets/css/feather.css" rel="stylesheet" type="text/css">
-	<script src="https://unpkg.com/feather-icons"></script>
-	<script src="script.js" async></script>
 </head>
+
 <body>
 	<main>
 		<section class="hero-wrapper" id="home-section">
-			<header class="flex-div justify-space align-center">
-				<div class="logo-wrapper">
+			<header class="  flex-div justify-space align-center">
+				<div class="logo-wrapper flex-div align-center">
+					<div class="hamburger-icon">
+						<img src="/images/hamburger.svg" alt="icon" id="hamburger-btn" />
+					</div>
 					<img src="/images/logo.svg" alt="FASTER UI" />
 				</div>
-				<nav class="navigation-wrapper">
-					<ul class="nav-items flex-div">
-						<li class="nav-item cx-text16"><a href="#home-section">Home</a></li>
-						<li class="nav-item cx-text16"><a href="#about-section">About</a></li>
-						<li class="nav-item cx-text16"><a href="#how-it-works-section">How it Works</a></li>
-						<li class="nav-item cx-text16"><a href="#services-section">Services</a></li>
-					</ul>
-				</nav>
-				<div class="user-wrapper">
+				<div class="overlay flex-div justify-space" id="overlay">
+					<div class="menu-cross">
+						<img src="images/cross.png" />
+					</div>
+					<nav class="navigation-wrapper overlay-nav">
+						<ul class="nav-items flex-div">
+							<li class="nav-item cx-text16"><a href="#home-section">Home</a></li>
+							<li class="nav-item cx-text16"><a href="#about-section">About</a></li>
+							<li class="nav-item cx-text16"><a href="#how-it-works-section">How it Works</a></li>
+							<li class="nav-item cx-text16"><a href="#services-section">Services</a></li>
+						</ul>
+						<div class="user-wrapper flex-div">
+							<button class="cx-text16">Sign In</button>
+							<button class="cta-primary cta-primary-text16">Sign Up</button>
+						</div>
+					</nav>
+				</div>
+				<div class="login-signup-wrapper flex-div">
 					<button class="cx-text16">Sign In</button>
 					<button class="cta-primary cta-primary-text16">Sign Up</button>
 				</div>
@@ -46,26 +56,26 @@
 					<div>
 						<div class="flex-div left-section">
 							<div class="card-wrapper card-container">
-								<img src="/images/web-design.svg" class="card-image"/>
+								<img src="/images/web-design.svg" class="card-image" />
 								<h4 class="cx-text19">Web Design</h4>
 								<p class="cx-text14">From concept to launch, we create stunning, user-centric websites that elevate your
 									brand and engage your audience.</p>
 							</div>
 							<div class="card-wrapper card-container">
-								<img src="/images/ui-ux.svg"  class="card-image"/>
+								<img src="/images/ui-ux.svg" class="card-image" />
 								<h4 class="cx-text19">UI/UX Design</h4>
 								<p class="cx-text14">From concept to launch, we create stunning, user-centric websites that elevate your
 									brand and engage your audience.</p>
 							</div>
 							<div class="card-wrapper card-container">
-								<img src="/images/responsive-design.svg" class="card-image"/>
+								<img src="/images/responsive-design.svg" class="card-image" />
 								<h4 class="cx-text19">Responsive Design</h4>
 								<p class="cx-text14">From concept to launch, we create stunning, user-centric websites that elevate your
 									brand and engage your audience.</p>
 							</div>
 							<div class="card-wrapper card-container flex-div">
 								<div class="webflow-container">
-									<img src="/images/webflow.png"  class="card-image"/>
+									<img src="/images/webflow.png" class="card-image" />
 									<h4 class="cx-text19">Webflow</h4>
 									<p class="cx-text14">From concept to launch, we create stunning, user-centric websites that elevate
 										your brand and engage your audience.</p>
@@ -75,7 +85,7 @@
 								</div>
 							</div>
 							<div class="card-wrapper card-container">
-								<img src="/images/development-icon.svg"  class="card-image"/>
+								<img src="/images/development-icon.svg" class="card-image" />
 								<h4 class="cx-text19">Custom Development</h4>
 								<p class="cx-text14">From concept to launch, we create stunning, user-centric websites that elevate your
 									brand and engage your audience.</p>
@@ -83,35 +93,38 @@
 						</div>
 					</div>
 					<div class="card-wrapper right-section card-container">
-						<img src="/images/ecommerce-solution.svg" class="card-image" />
-						<h4 class="cx-text19">E-commerce Solutions:</h4>
-						<p class="cx-text14">From concept to launch, we create stunning, user-centric websites that elevate your brand and
-							engage your audience.</p>
-						<img src="/images/ecommerce.png" />
+						<div>
+							<img src="/images/ecommerce-solution.svg" class="card-image" />
+							<h4 class="cx-text19">E-commerce Solutions:</h4>
+							<p class="cx-text14">From concept to launch, we create stunning, user-centric websites that elevate your
+								brand and
+								engage your audience.</p>
+						</div>
+							<img src="/images/ecommerce.png" />
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="proof-of-work-wrapper" id="how-it-works-section">
 			<div class="header-wrapper flex-div ">
-				<button class="prev arrow-button"><img src="/images/right-arrow.png" class="arrow"/></button>
+				<button class="prev arrow-button"><img src="/images/right-arrow.png" class="arrow" /></button>
 				<div class="proof-of-work-title">
 					<h2 class="cx-h2">Check our Work</h2>
 					<p>Take a look at some of our recent projects to see how we've helped businesses like yours succeed
 						online.</p>
 				</div>
-				<button class="next arrow-button"><img src="/images/left-arrow.png" class="arrow"/></button>
+				<button class="next arrow-button"><img src="/images/left-arrow.png" class="arrow" /></button>
 			</div>
 			<div class="carousel-wrapper">
 				<div class="carousel-inner">
-				<img src="/images/image-1.png" class="carousel-item"/>
-				<img src="/images/image-1.png" class="carousel-item"/>
-				<img src="/images/image-1.png" class="carousel-item"/>
-			</div>
+					<img src="/images/image-1.png" class="carousel-item" />
+					<img src="/images/image-1.png" class="carousel-item" />
+					<img src="/images/image-1.png" class="carousel-item" />
+				</div>
 			</div>
 			<div class="reviews-wrapper card-container flex-div">
 				<div class="users-wrapper">
-					<img  src="/images/user-icon-1.png" />
+					<img src="/images/user-icon-1.png" />
 					<img src="/images/user-icon-2.png" />
 					<img src="/images/user-icon-3.png" />
 					<img class="kk" src="/images/user-icon-4.png" />
@@ -123,14 +136,16 @@
 						<span class="rating-icon">&#8902;</span>
 						<span class="rating-icon">&#8902;</i></span>
 						<span class="rating-icon">&#8902;</span>
-						<span class="rating-icon">&#8902;</i></span></p>
+						<span class="rating-icon">&#8902;</i></span>
+					</p>
 				</div>
 			</div>
 		</section>
 		<section class="pricing flex-div justify-space" id="services-section">
 			<div class="connects-wrapper">
-				<h2 class="cx-h2">Pricing</h2>
-				<p class="cx-text14">Take a look at some of our recent projects to see how we've helped businesses like yours succeed
+				<h2 class="cx-h2 pricing-title">Pricing</h2>
+				<p class="cx-text14">Take a look at some of our recent projects to see how we've helped businesses like yours
+					succeed
 					online.</p>
 				<div class="meet-wrapper card-container">
 					<h3 class="cx-medium-h3">Let’s Schedule a Meeting</h3>
@@ -145,102 +160,102 @@
 				</p>
 				<div class="services ">
 					<div class="flex-div align-center">
-						<img src="/images/checked.svg"/>
+						<img src="/images/checked.svg" />
 						<p class="cx-text14-25">Unlimited requests</p>
 					</div>
 					<div class="flex-div align-center">
-						<img src="/images/checked.svg"/>
+						<img src="/images/checked.svg" />
 						<p class="cx-text14-25">Unlimited requests</p>
 					</div>
 					<div class="flex-div align-center">
-						<img src="/images/checked.svg"/>
+						<img src="/images/checked.svg" />
 						<p class="cx-text14-25">Unlimited requests</p>
 					</div>
 					<div class="flex-div align-center">
-						<img src="/images/checked.svg"/>
+						<img src="/images/checked.svg" />
 						<p class="cx-text14-25">Unlimited requests</p>
 					</div>
 					<div class="flex-div align-center">
-						<img src="/images/checked.svg"/>
+						<img src="/images/checked.svg" />
 						<p class="cx-text14-25">Unlimited requests</p>
 					</div>
 					<div class="flex-div align-center">
-						<img src="/images/checked.svg"/>
+						<img src="/images/checked.svg" />
 						<p class="cx-text14-25">Unlimited requests</p>
 					</div>
-					
-
 				</div>
 				<div class="pricing-wrapper">
 					<h2 class="cx-h2 pricing-amount">$3,250<span class="cx-text14">/month</span></h2>
 				</div>
-				
+
 			</div>
 		</section>
 		<section class="faq">
-			<div class="faq-wrapper flex-div">
-				<div class="flex-div align-center">
+			<div class="faq-wrapper ">
+				<div class="left-section flex-div align-center">
 					<div class="faq-title">
 						<h2 class="cx-h2">
 							Frequently Asked Questions
 						</h2>
 					</div>
-
-
-
-				<div class="queries-wrapper">
-					<div class="query-wrapper card-container">
-						<div class="flex-div justify-space">
-							<h4 class="cx-h4"> How can I contact Inkyy Team?</h4>
-							<button class="faq-button"><img src="/images/open.svg" class="open-button" alt=""/><img src="/images/close.svg" class="close-button"/></button>
+						<div class="queries-wrapper">
+						<div class="query-wrapper card-container">
+							<div class="flex-div justify-space">
+								<h4 class="cx-h4"> How can I contact Inkyy Team?</h4>
+								<button class="faq-button"><img src="/images/open.svg" class="open-button" alt="" /><img
+										src="/images/close.svg" class="close-button" /></button>
+							</div>
+							<p class="cx-text14">
+								You can reach us through our contact form on our website or by emailing us at
+								<strong>hello@inkyy.com</strong> We typically respond within 24 hours.
+							</p>
 						</div>
-						<p class="cx-text14">
-							You can reach us through our contact form on our website or by emailing us at
-							<strong>hello@inkyy.com</strong> We typically respond within 24 hours.
-						</p>
-					</div>
-					<div class="query-wrapper card-container">
-						<div class="flex-div justify-space">
-							<h4 class="cx-h4">What services do you offer?</h4>
-							<button class="faq-button"><img src="/images/open.svg" class="open-button" alt=""/><img src="/images/close.svg" class="close-button"/></button>
+						<div class="query-wrapper card-container">
+							<div class="flex-div justify-space">
+								<h4 class="cx-h4">What services do you offer?</h4>
+								<button class="faq-button"><img src="/images/open.svg" class="open-button" alt="" /><img
+										src="/images/close.svg" class="close-button" /></button>
+							</div>
+							<p class="cx-text16">
+								You can reach us through our contact form on our website or by emailing us at
+								<strong>hello@inkyy.com</strong> We typically respond within 24 hours.
+							</p>
 						</div>
-						<p class="cx-text16">
-							You can reach us through our contact form on our website or by emailing us at
-						<strong>hello@inkyy.com</strong> We typically respond within 24 hours.
-						</p>
-					</div>
-					<div class="query-wrapper card-container">
-						<div class="flex-div justify-space">
-							<h4 class="cx-h4"> Do you provide website maintenance services?</h4>
-							<button class="faq-button"><img src="/images/open.svg" class="open-button" alt=""/><img src="/images/close.svg" class="close-button"/></button>
+						<div class="query-wrapper card-container">
+							<div class="flex-div justify-space">
+								<h4 class="cx-h4"> Do you provide website maintenance services?</h4>
+								<button class="faq-button"><img src="/images/open.svg" class="open-button" alt="" /><img
+										src="/images/close.svg" class="close-button" /></button>
+							</div>
+							<p class="cx-text16">
+								You can reach us through our contact form on our website or by emailing us at
+								<strong>hello@inkyy.com</strong> We typically respond within 24 hours.
+							</p>
 						</div>
-						<p class="cx-text16">
-							You can reach us through our contact form on our website or by emailing us at
-						<strong>hello@inkyy.com</strong> We typically respond within 24 hours.
-						</p>
-					</div>
-					<div class="query-wrapper card-container">
-						<div class="flex-div justify-space">
-							<h4 class="cx-h4"> How long does it take to design and develop a website?</h4>
-							<button class="faq-button"><img src="/images/open.svg" class="open-button" alt=""/><img src="/images/close.svg" class="close-button"/></button>
+						<div class="query-wrapper card-container">
+							<div class="flex-div justify-space">
+								<h4 class="cx-h4"> How long does it take to design and develop a website?</h4>
+								<button class="faq-button"><img src="/images/open.svg" class="open-button" alt="" /><img
+										src="/images/close.svg" class="close-button" /></button>
+							</div>
+							<p class="cx-text16">
+								You can reach us through our contact form on our website or by emailing us at
+								<strong>hello@inkyy.com</strong> We typically respond within 24 hours.
+							</p>
 						</div>
-						<p class="cx-text16">
-							You can reach us through our contact form on our website or by emailing us at
-						<strong>hello@inkyy.com</strong> We typically respond within 24 hours.
-						</p>
-					</div>
-					<div class="query-wrapper card-container">
-						<div class="flex-div justify-space">
-							<h4 class="cx-h4"> Do you require a deposit for projects?</h4>
-							<button class="faq-button"><img src="/images/open.svg" class="open-button" alt=""/><img src="/images/close.svg" class="close-button"/></button>
+						<div class="query-wrapper card-container">
+							<div class="flex-div justify-space">
+								<h4 class="cx-h4"> Do you require a deposit for projects?</h4>
+								<button class="faq-button"><img src="/images/open.svg" class="open-button" alt="" /><img
+										src="/images/close.svg" class="close-button" /></button>
+							</div>
+							<p class="cx-text16">
+								You can reach us through our contact form on our website or by emailing us at
+								<strong>hello@inkyy.com</strong> We typically respond within 24 hours.
+							</p>
 						</div>
-						<p class="cx-text16">
-							You can reach us through our contact form on our website or by emailing us at
-						<strong>hello@inkyy.com</strong> We typically respond within 24 hours.
-						</p>
 					</div>
 				</div>
-			</div>
 			</div>
 		</section>
 	</main>
@@ -252,15 +267,15 @@
 			<form class="form-wrapper">
 				<div class="form-controls">
 					<label class="cx-text18">email</label>
-					<input class="cx-text20"   type="email" placeholder="example@email.com" />
+					<input class="cx-text20" type="email" placeholder="example@email.com" />
 				</div>
 				<div class="form-controls">
 					<label class="cx-text18">name</label>
-					<input  class="cx-text20" type="text" placeholder="full name" />
+					<input class="cx-text20" type="text" placeholder="full name" />
 				</div>
 				<div class="form-controls">
 					<label class="cx-text18">message</label>
-					<textarea class="cx-text20"  rows="5"  placeholder="write your message...."></textarea>
+					<textarea class="cx-text20" rows="5" placeholder="write your message...."></textarea>
 				</div>
 				<button type="submit" class="cta-primary cta-primary-text16 width-100">Get in Touch</button>
 			</form>
@@ -271,34 +286,33 @@
 					<div class="logo-wrapper">
 						<img src="/images/logo.svg" />
 					</div>
-					<p class="cx-text16 info">Ready to elevate your online presence? Contact us today to discuss your project and discover how we
+					<p class="cx-text16 info">Ready to elevate your online presence? Contact us today to discuss your project and
+						discover how we
 						can bring your vision to life.</p>
-	
-				</div>
+					</div>
 				<div class="left-section-wrapper">
-					<div class="social-icon">
+					<div class="navigation-link">
 						<ul class="nav-items flex-div justify-space">
-							<li class="nav-item">Home</li>
-							<li class="nav-item">About</li>
-							<li class="nav-item">How it Works</li>
-							<li class="nav-item">Services</li>
+							<li class="nav-item cx-text16">Home</li>
+							<li class="nav-item cx-text16">About</li>
+							<li class="nav-item cx-text16">How it Works</li>
+							<li class="nav-item cx-text16">Services</li>
 						</ul>
-
 					</div>
 				</div>
 			</div>
-<div class="social-wrapper flex-div justify-space">
-	<div class="flex-div align-center powered-wrapper">
-		<img src="images/loved-by-icon.svg" class="icon">
-		<p class="cx-text16 ">with love powered by inkyy.com</p>
-	</div>
-	<div class="social-icon-wrapper">
-		<img src="/images/social-insta-icon.svg"/>
-		<img src="/images/social-linked-in-icon.svg"/>
-		<img src="/images/social-music-icon.svg"/>
-		<img src="/images/social-design-icon.svg" />
-	</div>
-</div>
+			<div class="social-wrapper flex-div justify-space">
+				<div class="flex-div align-center powered-wrapper">
+					<img src="images/loved-by-icon.svg" class="icon">
+					<p class="cx-text16 ">with love powered by inkyy.com</p>
+				</div>
+				<div class="social-icon-wrapper">
+					<img src="/images/social-insta-icon.svg" />
+					<img src="/images/social-linked-in-icon.svg" />
+					<img src="/images/social-music-icon.svg" />
+					<img src="/images/social-design-icon.svg" />
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>
